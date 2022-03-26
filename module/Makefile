@@ -9,7 +9,7 @@ else
   DEBFLAGS = -O2
 endif
 
-EXTRA_CFLAGS += $(DEBFLAGS) -I..
+EXTRA_CFLAGS += $(DEBFLAGS)  -I.. -fno-pie
 
 ifneq ($(KERNELRELEASE),)
 # call from kernel build system
